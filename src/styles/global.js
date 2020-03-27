@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { darken } from "polished";
 
 export default createGlobalStyle`
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
@@ -22,6 +23,35 @@ input, button, textarea{
 
 button{
   cursor: pointer;
+}
+
+form input {
+  width: 100%;
+  height: 50px;
+  color: #333;
+  border: 1px solid #dcdce6;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+
+.button{
+  width: ${props => (props.width ? props.width : "100%")};
+  height: 50px;
+  background: #e02041;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 16px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 50px;
+  transition: background 0.2s;
+  &:hover{
+    background: ${darken(0.05, "#e02041")}
+  }
 }
 
 `;
