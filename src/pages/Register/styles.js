@@ -82,14 +82,14 @@ export const Content = styled.div`
     input {
       margin-top: 8px;
     }
-    > div.input-group {
+  }
+  .input-group {
       display: flex;
       input + input {
         margin-left: 8px;
       }
-      > input#uf {
+      input#uf {
         width: 80px;
       }
     }
-  }
 `;

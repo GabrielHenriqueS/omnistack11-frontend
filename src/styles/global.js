@@ -33,6 +33,9 @@ form input {
   border-radius: 8px;
   padding: 0 24px;
 }
+textarea.has-error, input.has-error{
+  border: 1px solid #e02041;
+}
 form textarea {
   width: 100%;
   min-height: 140px;
