@@ -31,29 +31,27 @@ export const Content = styled.div`
     max-width: 380px;
     >img{
 
-@media (max-width: 840px) {
-    width: 90px;  
-  }
-}
+    @media (max-width: 840px) {
+        width: 90px;  
+      }
+    }
     > h1 {
       margin: 64px 0 32px;
       font-size: 32px;
       @media (max-width: 840px) {
-        font-size: 25px;
+        font-size: 20px;
         margin: 32px 0 16px;
-
       }
     }
 
     > p {
       font-size: 18px;
-      color: #737380;
-      line-height: 32px;
       @media (max-width: 840px) {
         font-size: 15px;
         line-height: 15px;
       }
-      
+      color: #737380;
+      line-height: 32px;
     }
     > a {
       display: flex;
@@ -79,17 +77,8 @@ export const Content = styled.div`
   > form {
     width: 100%;
     max-width: 450px;
-    input {
+    input, textarea {
       margin-top: 8px;
-    }
-    > div.input-group {
-      display: flex;
-      input + input {
-        margin-left: 8px;
-      }
-      > input#uf {
-        width: 80px;
-      }
     }
   }
 `;
